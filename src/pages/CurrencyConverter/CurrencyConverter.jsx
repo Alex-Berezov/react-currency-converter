@@ -25,11 +25,12 @@ const CurrencyConverter = ({ coursesData }) => {
         dispatch(setAmount(fromCurrency && fromCurrency.Nominal));
         dispatch(setExchangeRate(toCurrency && 
             (fromCurrency.Value * fromCurrency.Nominal) / (toCurrency.Value / toCurrency.Nominal)));
-    }, [fromCurrency, toCurrency]);
+    }, [fromCurrency, toCurrency, dispatch]);
 
     const filteredSelectedCurrency = (value) => {
         let res = coursesData.filter(currency => {
             if (currency.CharCode === value) return currency;
+            return undefined;
         });
         return res;
     };

@@ -33,6 +33,7 @@ function App() {
 
       const handleSelectedCurrency = coursesData.filter((elem) => {
           if (elem.CharCode === selectedValue) return elem;
+          return undefined;
       });
 
       dispatch(setSelectedCurrency(...handleSelectedCurrency));

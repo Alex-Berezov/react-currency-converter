@@ -14,6 +14,7 @@ const CurrencyTable = ({ coursesData, changeValueRate }) => {
         ) {
           return data;
         }
+        return undefined;
     });
     if (serchValue !== '') {
         coursesData = filteredCoursesData;
