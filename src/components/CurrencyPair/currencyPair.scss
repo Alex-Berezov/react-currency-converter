@@ -1,0 +1,43 @@
+.currency__pair {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;  
+    
+    .card {
+        padding: 5px;
+
+        .select_blok {
+            align-self: center;
+
+            select {
+                outline: none;
+                padding: 5px;
+                width: 100%;
+            }
+        }
+
+        .card-body {
+
+            .pair_block {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                p {
+                    margin-bottom: 0;
+                }
+
+                .course_change {
+                    display: flex;
+                    align-items: center;
+
+                    .fas {
+                        margin-right: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
